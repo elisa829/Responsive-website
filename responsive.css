@@ -1,0 +1,85 @@
+/* === For your Responsive CSS === */
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width:601px) {
+    #splash {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        height: 10.7rem;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+  
+}
+
+@media screen and (max-width:600px) {
+    header {
+        grid-template-columns: 100%;
+    }
+
+    #nav a {
+        display: block;
+        background-color: orange;
+        text-align: center;
+        padding: .25rem;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    #splash {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    #splash {
+        grid-column: 1/2;
+    }
+
+    #app {
+        grid-column: 1/2;
+    }
+
+    #mobile-menu {
+        position: fixed;
+        top: 10px;
+        right: 0px;
+    }
+}
+
+/*dark mode */
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #36454F
+    }
+
+    main {
+        background-color:
+            #36454F;
+        color: white
+    }
+
+    #nav a {
+        color: white;
+    }
+
+    footer,
+    header {
+        background-color: #939799;
+        color: white;
+    }
+
+}
